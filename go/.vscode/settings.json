@@ -1,0 +1,8 @@
+{
+    "go.toolsEnvVars": {
+        "GOOS": "linux",
+        "GOARCH": "arm",
+        "GOROOT": "/Users/arunvignesh/Library/Caches/tinygo/goroot-8938fde03d03ad20c7ad1d01bbbf18ebe49dc0cac56e3fac2fd4bb8900ab4d05",
+        "GOFLAGS": "-tags=xtensa,baremetal,linux,arm,esp8266,esp,nodemcu,tinygo,math_big_pure_go,gc.conservative,scheduler.tasks,serial.uart"
+    }
+}

@@ -1,0 +1,91 @@
+body.main-container {
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+video{
+    width: 200px;
+    height: 200px;
+}
+
+div.chat-container{
+    display: flex;
+    flex: 1 1 30px;
+    margin: 0 20px;
+    height:100%;
+    flex-direction: column;
+}
+
+div.chat-container .title-container{
+    display: flex;
+    flex: 1 1 30px;
+    background-color: bisque;
+}
+
+div.chat-container .title-container .title{
+    display: flex;
+    flex: 1 1 30px;
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+div.chat-container .users-online-container{
+    display: flex;
+    flex: 11 11 30px;
+    flex-direction: column;
+}
+
+div.chat-container .users-online-container .user-online{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+div.chat-container .users-online-container .user-online .name-container{
+    display: flex;
+    flex: 8 8 0;
+    flex-direction: row;
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+div.chat-container .users-online-container .user-online .name-container .name{
+    padding: 5px 0;
+}
+
+div.chat-container .users-online-container .user-online .bulb-container{
+    display: flex;
+    flex: 2 2 0;
+    flex-direction: column;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+}
+
+div.chat-container .users-online-container .user-online .bulb-container .bulb{
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: green;
+}
+
+div.whiteboard-container{
+    display: flex;
+    flex: 3 1 30px;
+    margin: 0 20px;
+    height:100%;
+}
+
+div.video-call-container{
+    display: flex;
+    flex: 1 1 30px;
+    margin: 0 20px;
+    height:100%;
+}

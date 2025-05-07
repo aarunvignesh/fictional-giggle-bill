@@ -1,19 +1,21 @@
 const express = require("express"),
     moment = require("moment"),
-    config = require("./config/config"),
     path = require("path"),
     app = express();
 
-    app.set("view engine","html")
+app.set("view engine", "html")
 app.engine("html", require("ejs").renderFile);
 
-app.use(express.static(path.join(__dirname,"./public")))
+app.use(express.static(path.join(__dirname, "./public")))
 
-app.get("/chart", (req,res) =>{
+app.get("/chart", (req, res) => {
     res.render("chart")
 })
 
 app.get("/", (req, res) => {
+    const modulePath = "./config/config";
+    delete require.cache[require.resolve(modulePath)]
+    config = require(modulePath)
     res.render("index.html", {
         invoice_number: Math.round(Math.random() * 100000000),
         billing_period: moment(config.invoice_date).format("MMM, YYYY"),
